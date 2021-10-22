@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+textarea p {
+    color: orange
+}
+
+.container {
+    width: 100vw;
+    height: 130vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_editor {
+    width: 100%;
+    height: 60vh;
+}
+
+.main_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    transition: 0.4s ease all !important;
+    align-items: center;
+}
+
+.html_code,
+.css_code,
+.javascript_code {
+    border: 2px solid #060606;
+    width: calc(100%/3);
+    height: 100%;
+}
+
+.result {
+    width: 100%;
+    height: 70vh;
+    overflow: auto;
+}
+
+
+#html,
+#css,
+#js {
+    width: 100%;
+    min-height: calc(100% - 25%);
+    max-height: calc(100% - 35%);
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 1rem 1.3rem;
+    background-color: #1E1F24;
+    color: white;
+    font-size: 1.24rem;
+    font-family: 'Source Code Pro', monospace;
+    text-transform: lowercase;
+}
+
+#result {
+    border: none;
+    outline: none;
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+}
+
+.html_header,
+.css_header,
+.js_header {
+    width: 100%;
+    min-height: 25%;
+    max-height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #060606;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box !important;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row !important;
+    }
+
+    .main_editor {
+        min-width: 50% !important;
+        height: 100vh !important;
+        flex-direction: column !important;
+        overflow: hidden !important;
+    }
+
+    .header {
+        width: 100% !important;
+        min-height: 20%;
+        max-height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+    }
+
+    .main_container {
+        width: 300% !important;
+    }
+
+    .header button {
+        border: none;
+        outline: none;
+        margin-right: 2rem;
+        padding: 0.3rem 0.3rem;
+        background-color: #464B5A !important;
+        color: white;
+        cursor: pointer;
+    }
+
+    .result {
+        min-width: 50% !important;
+        height: 100% !important;
+        color: red !important;
+        overflow: auto;
+    }
+
+    .html_code,
+    .css_code,
+    .javascript_code {
+        width: calc(100% /3);
+        min-height: calc(100%-20%) !important;
+        max-height: calc(100%-30%) !important;
+    }
+
+    #html,
+    #css,
+    #js {
+        height: 100% !important;
+        padding: 0.7rem 0.7rem !important;
+        font-size: 1rem !important;
+    }
+
+    #result {
+        overflow: auto;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    body {
+        overflow: auto !important;
+    }
+
+    .header {
+        min-height: 15%!important;
+        max-height: 19%!important;
+    }
+    .main_container {
+        min-height: calc(100%-15%)!important;
+        max-height: calc(100%-19%)!important;
+    }
+    .container {
+        flex-direction: column !important;
+        height: 110vh !important;
+    }
+
+    #html,
+    #css,
+    #js {
+        padding: 1.2rem 1.2rem !important;
+    }
+
+    #result {
+        overflow: auto;
+    }
+
+    .main_editor {
+        width: 100% !important;
+        height: 60% !important;
+    }
+
+    .result {
+        width: 100% !important;
+        height: 50% !important;
+    }
+}
+.bar {
+    background-color: black;
+    padding: 0.4rem 1rem;
+}
+.bar button {
+    background-color: white;
+}

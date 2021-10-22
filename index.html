@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Editor</title>
+   <link rel="stylesheet" href="js/codemirror.css" type="text/css" media="all" />
+   <script src="js/codemirror.js" defer></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/theme/darcula.min.css" integrity="sha512-kqCOYFDdyQF4JM8RddA6rMBi9oaLdR0aEACdB95Xl1EgaBhaXMIe8T4uxmPitfq4qRmHqo+nBU2d1l+M4zUx1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://codemirror.net/mode/xml/xml.js" defer></script>
+   <script src="https://codemirror.net/mode/css/css.js" defer></script>
+   <script src="js/javascript.js" defer></script>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+
+<body>
+    <!-- desktop version -->
+    <div class="container">
+        <div class="main_editor">
+            <div class="main_container">
+            <div class="html_code">
+                <div class="html_header">HTML</div>
+                <textarea id="html" onmouseout="run()"><!--type your html here--></textarea>
+            </div>
+            <div class="css_code">
+                <div class="css_header">CSS</div>
+                <textarea id="css" onmouseout="run()">/*type css here*/</textarea>
+            </div>
+            <div class="javascript_code">
+                <div class="js_header">JAVASCRIPT</div>
+                <textarea id="js" onmouseout="run()">//type javascript here></textarea>
+            </div>
+            </div>
+        </div>
+        <div class="result">
+            <iframe id="result"></iframe>
+        </div>
+    </div>
+    <script src="./js/main.js" charset="utf-8"></script>
+</body>
+
+</html>
