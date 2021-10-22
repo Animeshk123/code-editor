@@ -159,7 +159,7 @@ textarea p {
         width: calc(100% /3);
         min-height: calc(100%-20%) !important;
         max-height: calc(100%-30%) !important;
-        border:"none" !important;
+        border:none !important;
     }
 
     #html,
