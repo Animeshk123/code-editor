@@ -65,7 +65,6 @@ textarea p {
     color: white;
     font-size: 1.24rem;
     font-family: 'Source Code Pro', monospace;
-    text-transform: lowercase;
 }
 
 #result {
