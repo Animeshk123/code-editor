@@ -213,6 +213,9 @@ textarea p {
         width: 100% !important;
         height: 50% !important;
     }
+    .header button {
+     padding:0.5rem 0.5rem !important;
+}
 }
 .bar {
     background-color: black;
