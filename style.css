@@ -55,8 +55,8 @@ textarea p {
 #css,
 #js {
     width: 100%;
-    min-height: calc(100% - 25%);
-    max-height: calc(100% - 35%);
+    min-height: calc(100% - 20%);
+    max-height: calc(100% - 30%);
     resize: none;
     border: none;
     outline: none;
@@ -79,8 +79,8 @@ textarea p {
 .css_header,
 .js_header {
     width: 100%;
-    min-height: 25%;
-    max-height: 35%;
+    min-height: 20%;
+    max-height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
